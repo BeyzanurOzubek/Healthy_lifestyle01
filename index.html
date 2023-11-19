@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vücut Kitle Endeksi Nedir, Vücut Kitle Endeksi Hesaplama, Vücut Kitle Endeksi Kaç Olmalı ">
+    <meta name="description" content="Vücut kitle endeksinizi hesaplayabilirsiniz.">
+    <meta name="author" content="Beyzanur ÖZÜBEK">
+    <title>Vücut Kitle Endeksi (BMI)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-bar" id="body-mass-index">
+        <ul>
+            <li class="active"><a href="#body-mass-index">Vücut Kitle Endeksi (BMI)</a> </li>
+            <li><a href="#basal-metabolic-rate">Bazal Metabolizma Hızı (BMR)</a></li>
+            <li><a href="#ideal-weight">İdeal Kilo </a></li>
+            <li><a href="#daily-calorie-need">Günlük Kalori İhtiyacı </a></li>
+            <li><a href="#daily-water-need">Günlük Su İhtiyacı</a></li>
+        </ul>
+    </div>
+    <div><br><br>
+        <h1 >Vücut Kitle Endeksi Hesaplama <br>(bmi）</h1>
+        <p>
+            Vücut kitle endeksi(BMI), sahip olunan vücut yağ miktarını tahmin etmek için boy ve kilo ölçümlerinden elde edilen 
+            verilerin kullanıldığı tıbbi bir tarama aracıdır. Aşağıdaki hesaplama aracını kullanarak vücut kitle endeksinizi (VKİ) 
+            hemen hesaplayabilirsiniz.
+        </p>
+        <form>
+            Boyunuz (cm) <br>
+            <input class = "box" type="number" name="boy1" id = "boy1"><br><br>
+            Kilonuz (kg) <br>
+            <input class = "box" type="number" name="kilo1" id = "kilo1"><br><br>
+            <button class ="button" type="button" onclick="message_1();">Hesapla</button>
+        </form>
+
+        <br><br><br>
+        <h2>Vücut Kitle Endeksi (BMI) Nedir?</h2>
+        <hr color="red">
+        <p>
+            Vücut kitle endeksi (VKE), yetişkin bir bireyin kilosunun boyuna göre oranının ölçülmesi ile kişinin ideal kiloda olup 
+            olmadığını gösteren bir parametredir. İngilizcede "Body Mass Index (BMI)" şeklinde, Türkçe'de ise "Vücut Kitle 
+            Endeksi (VKE)" olarak ifade edilir. Kişilerin kolay ulaşabileceği ve cinsiyet, yaş, ırk ayrımı yapılmadan toplumdaki 
+            her bireye aynı şekilde uygulanabileceği için en yaygın olarak kullanılan boy-kilo parametresidir.
+        </p>
+        <p>Matematiksel olarak kişinin kilosunun boyunun karesine bölünmesi ile vücut kitle endeksi bulunur. Bu ölçümle kişinin 
+            olması gereken kilo aralığı tayin edilebilir. Diyet planı uygulamak için yeterli bir ölçüm olmasa da vücut kitle endeksi,
+            kişinin yaşına ve boyuna göre uygun bir kiloda olup olmadığına dair genel bir fikir verebilir.
+        </p>
+
+        <h2>Vücut Kitle Endeksi Kaç Olmalı ?</h2>
+        <hr color="red">
+        <p>
+            Dünya Sağlık Örgütü, BMI sonuçlarını 20 yaşın üzerindeki yetişkinler için 6 farklı şekilde sınıflandırır. Aşağıdaki 
+            Dünya Sağlık Örgütü’nün vücut kitle indeksi (vki) kaç olmalı sorusunun cevap sınıflandırmada kullandığı oranlar 
+            listelenmiştir:
+            <ul>
+                <li>
+                    18.5’in altında: Zayıf
+                </li>
+                <li>
+                    18.5 – 24.9 arasında: Normal Kilo
+                </li>
+                <li>
+                    25.0 – 29.9 arasında: Fazla Kilolu
+                </li>
+                <li>
+                    30.0 – 34.9 arasında: 1. Derece Obez
+                </li>
+                <li>
+                    35.0 – 39.9 arasında: 2. Derece Obez
+                </li>
+                <li>
+                    40.0 ve üzeri: Morbid Obez
+                </li>
+            </ul><br>
+            <p>
+                Eğer sonucunuz 24.9’un üzerinde çıktıysa kilonuzun olması gerekenden fazla olduğu anlamına gelir. Bu oran ne kadar 
+                yükselirse, olması gereken kilonuzun o kadar üzerine çıktığı sonucuna varabilirsiniz.
+            </p>
+            <img src="pictures/saglikli-yasam2.jpg">
+        </p>
+    </div>
+    <div class="menu-bar" id="basal-metabolic-rate">
+        <ul>
+            <li><a href="#body-mass-index">Vücut Kitle Endeksi (BMI)</a> </li>
+            <li class="active" ><a href="#basal-metabolic-rate">Bazal Metabolizma Hızı (BMR)</a></li>
+            <li><a href="#ideal-weight">İdeal Kilo </a></li>
+            <li><a href="#daily-calorie-need">Günlük Kalori İhtiyacı </a></li>
+            <li><a href="#daily-water-need.">Günlük Su İhtiyacı</a></li>
+        </ul>
+    </div>
+    <div><br><br>
+        <h1>Bazal Metabolizma Hesaplama <br>(BMR)<br> </h1>
+        <p>
+            Bazal metabolizma, vücudun dinlenirken kullandığı minimum ya da temel enerji miktarıdır. Aşağıdaki hesaplama aracını 
+            kullanarak bazal metabolizma hızınızı hemen hesaplayabilirsiniz.
+        </p>
+        <form >
+            Boy (cm) <br>
+            <input class = "box" type="number" name="boy2" id = "boy2"><br><br>
+            Kilo (kg) <br>
+            <input class = "box" type="number" name="kilo2" id = "kilo2"><br><br>
+            Yaş <br>
+            <input class = "box" type="number" name="yas2" id = "yas2"><br><br>
+            Cinsiyetiniz
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="cinsiyet2" id="kadin2">
+                        <label for="kadin" >Kadın &nbsp;&nbsp;&nbsp;</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="cinsiyet2" id="erkek2" >
+                        <label for="erkek">Erkek</label>
+                    </td>
+                </tr>
+            </table><br><br>
+            <button class ="button" type="button" onclick="message_2();">Hesapla</button>
+        </form>
+        <br><br><br>
+        <h2>Bazal Metabolizma Hızı Nedir?</h2>
+        <hr color="red">
+        <p>
+            Vücudun solunum, dolaşım, elektron iletimi, yeni hücre sentezi gibi en temel işlevlerini yerine getirmesi için ihtiyaç 
+            duyduğu kalori miktarı bazal metabolizma hızını verir. Bu miktar ne kadar yüksekse bazal metabolizma hızı da o derece 
+            yüksek olur. Laboratuvar koşulları altında hiç hareket etmeksizin çok kısıtlayıcı koşullar altında ölçülür. 
+            Bazal metabolizma hızını etkileyen faktörler şunlardır:
+            <ul>
+                <li>
+                    Vücut kas oranı bazal metabolizma hızını artıran önemli bir faktördür. Vücut kas oranı yüksek olan bireyler 
+                    dinlenme sırasında bile daha yüksek kalori harcar.
+                </li>
+                <li>
+                    Bazal metabolizma hızını etkileyen bir diğer faktör cinsiyettir. Erkekler, aynı yaş ve kiloya sahip kadınlara 
+                    oranla daha az yağ ve daha yüksek kas kitlesine sahiptir. Bu durum erkeklerin bazal metabolizma hızının daha 
+                    yüksek olmasını sağlar.
+                </li>
+                <li>
+                    Bazal metabolizma hızında önemli etkisi olan bir diğer faktör de yaştır. Yaş ilerledikçe vücuttaki kas oranında 
+                    azalma gözlenir. Kas miktarı azaldıkça bazal metabolizma hızı yavaşlar ve günlük kalori tüketiminde azalma görülür.
+                </li>
+            </ul>
+        </p>
+        <h2>Bazal Metabolizma Hızı Nasıl Hesaplanır?</h2>
+        <hr color="red">
+        <p>
+            Bazal metabolizma hızı hesaplama, günlük harcamanız gereken kalori miktarına ulaşmanızı sağlar. Sağlıklı bir kiloya 
+            sahip olmak ya da formunuzu korumak istiyorsanız öncelikle bazal metabolizma hızınızın kaç kalori olduğunu bulmanız 
+            ve ardından da yaşam tarzına bağlı olarak günlük kalori ihtiyacınızı hesaplamanız gerekir.  Aldığınız kaloriden daha 
+            az ya da daha yüksek kalori tüketirseniz, kalori açığı ya da kalori fazlası sağlayabilir ve ideal kilonuza 
+            ulaşabilirsiniz. Bazal metabolizma hızını hesaplamak için en çok kullanılan yöntemlerden biri “Harris- Benedict” 
+            formülüdür. Harris Benedict formülüne göre;
+            <ul>
+                <li>Yetişkin bir kadının bazal metabolizma hızı= 447.593 + (9.247 x kg olarak ağırlık) + (3.098 x cm olarak boy) – (4.330 x yıl olarak yaş)</li>
+                <li>Yetişkin bir erkeğin bazal metabolizma hızı=  88.362 + (13.397 x ağırlık kg) + (4.799 x cm olarak boy) – (5.677 x yıl olarak yaş)</li>
+            </ul>
+        </p>
+        <img src="pictures/saglikli-yasam4.jpg">
+    </div>
+
+    <div class="menu-bar" id="ideal-weight">
+        <ul>
+            <li><a href="#body-mass-index">Vücut Kitle Endeksi (BMI)</a> </li>
+            <li><a href="#basal-metabolic-rate">Bazal Metabolizma Hızı (BMR)</a></li>
+            <li class="active" ><a href="#ideal-weight">İdeal Kilo </a></li>
+            <li><a href="#daily-calorie-need">Günlük Kalori İhtiyacı </a></li>
+            <li><a href="#daily-water-need">Günlük Su İhtiyacı</a></li>
+        </ul>
+    </div>
+    <div><br><br>
+        <h1>İdeal Kilo Hesaplama <br></h1>
+        <p>
+            İdeal kilonuzu etkileyen birden fazla faktör vardır. Yaş, cinsiyet, kas kütlesi, genetik, etnik köken ve fiziksel 
+            aktivite seviyeleri bu faktörlerden yalnızca birkaçını oluşturur. Birçoğumuz bu sihirli rakamı tartıda ararken 
+            gerçek ideal bir ağırlığın olmadığı yönünde. Aşağıdaki hesaplama aracından ideal kilo oranınızı hesaplayabilirsiniz.
+        </p>
+        <form >
+            Boy (cm) <br>
+            <input class = "box" type="number" name="boy3" id = "boy3"><br><br>
+            Kilonuz (kg) <br>
+            <input class = "box" type="number" name="kilo3" id = "kilo3"><br><br>
+            Cinsiyetiniz
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="cinsiyet3" id="kadin3">
+                        <label for="kadin" >Kadın &nbsp;&nbsp;&nbsp;</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="cinsiyet3" id="erkek3" >
+                        <label for="erkek">Erkek</label>
+                    </td>
+                </tr>
+            </table><br><br>
+            <button class ="button" type="button" onclick="message_3();">Hesapla</button>
+        </form>
+        <br><br><br>
+        <h2>İdeal Kilo Nasıl Hesaplanır?</h2>
+        <hr color="red">
+        <p>
+            Sağlıklı bir kiloyu korumak bedensel ve zihinsel refah için oldukça önemli olmasının yanı sıra hastalık riskini 
+            azaltıyor olsa da bunun başarının tek ölçüsü olmadığını bilmek önemlidir. Ölçek dışı bazı etkilere, bel çevresi 
+            ölçümü gibi sağlık sonuçlarına ve kondisyon seviyelerinizdeki iyileşmelere dikkat etmek, sağlıklı alışkanlıkları 
+            güçlendirmeye yardımcı olabilir. Kilonuz ve sağlığınız söz konusu olduğunda öne çıkan şey metabolik durumunuzu hep 
+            en üst seviyede tutabilmektir.
+            <ul>
+                <li>Erkekler için hesaplama formülü şu şekildedir: 50 +2.3 x ((boy (cm) / 2.54) -60)</li>
+                <li>Kadınlar için hesaplama formülü şu şekildedir: 45.5+2.3 x ((boy (cm) / 2.54) -60)</li>
+            </ul>
+        </p>
+        <img src="pictures/saglikli-yasam6.jpg">
+    </div>
+
+    <div class="menu-bar" id="daily-calorie-need">
+        <ul>
+            <li><a href="#body-mass-index">Vücut Kitle Endeksi (BMI)</a> </li>
+            <li><a href="#basal-metabolic-rate">Bazal Metabolizma Hızı (BMR)</a></li>
+            <li><a href="#ideal-weight">İdeal Kilo </a></li>
+            <li class="active"><a href="#daily-calorie-need">Günlük Kalori İhtiyacı </a></li>
+            <li><a href="#daily-water-need">Günlük Su İhtiyacı</a></li>
+        </ul>
+    </div>
+    <div>
+        <br><br>
+        <h1>Günlük Kalori İhtiyacı Hesaplama<br>  </h1>
+        <p>
+            İnsan vücudunun hayatta kalabilmesi ve günlük faaliyetlerini sürdürebilmesi için belirli miktarda kaloriye ihtiyacı vardır.
+            Kişinin boy, kilo gibi belirli özelliklerine göre değişen bu kalori miktarına günlük kalori ihtiyacı denir. Aşağıdaki 
+            hesaplama aracını kullanarak günlük kalori ihtiyacınızı hemen hesaplayabilirsiniz.
+        </p>
+        <form >
+            Boy (cm) <br>
+            <input class = "box" type="number" name="boy4" id = "boy4"><br><br>
+            Kilo (kg) <br>
+            <input class = "box" type="number" name="kilo4" id = "kilo4"><br><br>
+            Yaş <br>
+            <input class = "box" type="number" name="yas4" id = "yas4"><br><br>
+            Aktivite Seviyesi <br>
+            <select name="aktivite4" id="aktivite4">
+                <option value="hareketsiz">Hareketsiz</option>
+                <option value="dusuk">Düşük Düzeyde Hareketli</option>
+                <option value="orta">Orta Düzeyde Hareketli</option>
+                <option value="yuksek">Yüksek Düzeyde Hareketli</option>
+                <option value="cok-yuksek">Çok Yüksek Düzeyde Hareketli</option>
+            </select> <br><br>
+            Cinsiyetiniz
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="cinsiyet" id="kadin4">
+                        <label for="kadin" >Kadın &nbsp;&nbsp;&nbsp;</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="cinsiyet" id="erkek4" >
+                        <label for="erkek">Erkek</label>
+                    </td>
+                </tr>
+            </table><br><br>
+            <button class ="button" type="button" onclick="message_4();">Hesapla</button>
+        </form>
+        <br><br><br>
+        <h2>Günlük Kalori İhtiyacı Nasıl Hesaplanır?</h2>
+        <hr color="red">
+        <p>
+            Günlük kalori ihtiyacınızı bazal metabolizma hızınızı kullanarak hesaplayabilirsiniz. 
+            Tanım olarak BMR, dinlenme halindeki metabolizma hızıdır. Solunum, sindirim ve dolaşım gibi fonksiyonları sürdürmek 
+            için gereken minimum enerji seviyesidir. İlgili formül genellikle vücut ağırlığını korumak için ihtiyaç duyulan enerjiyi 
+            azaltarak kilo vermek için kullanılır.<br>
+            Bir insanın günlük kalori ihtiyacı hesaplama formülü ile bazal metabolizma hızınızı sayısal bir değere 
+            dönüştürebilirsiniz. Bu formül cinsiyetinize, yaşınıza ve vücut ölçülerinize göre belirlenir. Hareketsizken 
+            ne kadar kalori yaktığınızı söyleyen bu formül şu şekilde hesaplanır:
+            <ul>
+                <li>Bazal Metabolizma Hızı (BMR) (Kadın)  = [10*Kilogram(kg) + 6.25*Boy (cm) – 5*Yaş – 161] x AS</li>
+                <li>Bazal Metabolizma Hızı (BMR) (Erkek) = [10*Kilogram(kg) + 6.25*Boy (cm) – 5*Yaş + 5] x AS</li>
+            </ul><br>
+            <h4>Aktivite Seviyesi(AS):</h4>
+            <ul>
+                <li>Hareketsiz: 1.2</li>
+                <li>Düşük Düzeyde Hareketli: 1.375</li>
+                <li>Orta Düzeyde Hareketli: 1.55</li>
+                <li>Yüksek Düzeyde Hareketli: 1.725</li>
+                <li>Çok Yüksek Düzeyde Hareketli: 1.9</li>
+            </ul>
+        </p>
+        <p>
+            Yataktan kalkıp hareket etmeye başladığınızda daha fazla enerji harcayacağınız için bu rakamı ayarlamanız gerekecektir.
+        </p>
+        <img src="pictures/saglikli-yasam7.jpg">
+    </div>
+
+    <div class="menu-bar" id="daily-water-need">
+        <ul>
+            <li><a href="#body-mass-index">Vücut Kitle Endeksi (BMI)</a> </li>
+            <li><a href="#basal-metabolic-rate">Bazal Metabolizma Hızı (BMR)</a></li>
+            <li><a href="#ideal-weight">İdeal Kilo </a></li>
+            <li><a href="#daily-calorie-need">Günlük Kalori İhtiyacı </a></li>
+            <li class="active"><a href="#daily-water-need">Günlük Su İhtiyacı</a></li>
+        </ul>
+    </div>
+    <div>
+        <br><br>
+        <h1>Günlük Su İhtiyacı Hesaplama<br></h1>
+        <p>
+            Vücudun yaşamsal faaliyetlerini devam ettirebilmesi için gerek duyduğu günlük su miktarına günlük su ihtiyacı denir. 
+            Aşağıdaki hesaplama aracını kullanarak günlük su ihtiyacınızı hemen hesaplayabilirsiniz.
+        </p>
+        <form >
+            Kilonuz (kg) <br>
+            <input class = "box" type="number" name="kilo5" id = "kilo5"><br><br>
+            <button class ="button" type="button" onclick="message_5();">Hesapla</button>
+        </form>
+        <br><br><br>
+        <h2>Su İçmenin Yararları Nelerdir?</h2>
+        <hr color="red">
+        <p>
+            Suyun önemi ve vücut için gerekliliği göz önünde bulundurulunca suya duyulan ihtiyacın, beslenme ihtiyaçlarımızdan 
+            çok daha fazla olduğunu görmek mümkün. İşte günlük düzenli su tüketiminin ön plana çıkan faydaları:
+            <ul>
+                <li>Metabolizmayı güçlendirmeye yardımcı olur</li>
+                <li>Sindirim sistemini destekler</li>
+                <li>Beyin fonksiyonlarına katkı sağlar</li>
+                <li>Enerjik hissetmenize yardımcı olur</li>
+                <li>Böbrek sağlığına katkıda bulunur</li>
+                <li>Sağlıklı bir hamilelik sürecini destekler</li>
+                <li>Cilt sağlığını olumlu etkiler</li>
+            </ul>
+        </p>
+        <h2>Günlük Su İhtiyacı Nasıl Hesaplanır?</h2>
+        <hr color="red">
+        <p>
+            Günlük su ihtiyacınızı belirlerken yaşınız, cinsiyetiniz, yaşam tarzınız ve sağlık durumunuz gibi pek çok faktör göz 
+            önünde bulundurulmalıdır. Ancak genel hesaplamalarda kilonuza göre günlük su ihtiyacınızı hesaplayabilirsiniz.
+            <br><br>
+            Günlük su ihtiyacı formülü şu şekildedir:
+            <br><br>
+            Günlük Su İhtiyacı (lt): Kilo (kg) x 0.033</p>
+        <img src="pictures/saglikli-yasam8.jpg">
+    </div>
+    
+</body>
+</html>
+<script>
+    function message_1(){
+        var boy = document.getElementById("boy1").value;
+        var kilo = document.getElementById("kilo1").value;
+        var hesap = kilo/((boy/100)*(boy/100));
+        hesap = hesap.toFixed(1);
+
+        if(hesap < 18.5){
+            alert(hesap + "  Kilon zayif...");
+        }else if(hesap <= 24.9 && hesap >= 18.5){
+            alert(hesap + "  Kilon ideal...");
+        }else if(hesap <= 29.9 && hesap >= 25.0){
+            alert(hesap + "  Fazla kilolu...");
+        }else if(hesap <= 34.9 && hesap >= 30.0){
+            alert(hesap + "  1.Derece Obez...");
+        }else if(hesap <= 39.9 && hesap >= 35.0){
+            alert(hesap + "  2.Derece Obez...");
+        }else{
+            alert(hesap + "  Morbid Obez...");
+        }
+    }
+
+    function message_2(){
+        var boy = document.getElementById("boy2").value;
+        var kilo = document.getElementById("kilo2").value;
+        var kadin = document.getElementById("kadin2").checked;
+        var yas = document.getElementById("yas2").value;
+
+        if(kadin == true){
+            var hesap = 447.593 + (9.247 * kilo) + (3.098 * boy) - (4.330 * yas); 
+        }else{
+            var hesap = 88.362 + (13.397 * kilo) + (4.799 * boy) - (5.677 * yas);
+        }
+        hesap = hesap.toFixed(2);
+        alert("BAZAL METABOLİZMA HIZI (BMR) : " + hesap + " Kalori/Gün." );
+    }
+
+    function message_3(){
+        var boy = document.getElementById("boy3").value;
+        var kilo = document.getElementById("kilo3").value;
+        var kadin = document.getElementById("kadin3").checked;
+        if(kadin == true){
+                var hesap = 45.5 + 2.3 *((boy/2.54)-60); 
+            }else{
+                var hesap = 50 + 2.3 *((boy/2.54)-60);
+            }
+        hesap = hesap.toFixed(2);
+        
+        if(hesap < kilo){
+            alert("İdeal Kilo : " + hesap + "\nKilon İdeal Kilonun Üzerinde !!!");
+        }else if(hesap > kilo){
+            alert("İdeal Kilo : " + hesap + "\nKilon İdeal Kilonun Altında !!!");
+        }
+    }
+
+    function message_4(){
+        var boy = document.getElementById("boy4").value;
+        var kilo = document.getElementById("kilo4").value;
+        var yas = document.getElementById("yas4").value;
+        var aktivite = document.getElementById("aktivite4").value;
+        var kadin = document.getElementById("kadin4").checked;
+        
+        if(aktivite == "hareketsiz"){
+            if(kadin == true){
+                var hesap = (10*kilo+6.25*boy-5*yas-161)*1.2;
+            }else{
+                var hesap = (10*kilo+6.25*boy-5*yas+5)*1.2;
+            }
+        }else if(aktivite == "dusuk"){
+            if(kadin == true){
+                var hesap = (10*kilo+6.25*boy-5*yas-161)*1.375;
+            }else{
+                var hesap = (10*kilo+6.25*boy-5*yas+5)*1.375;
+            }
+        }else if(aktivite == "orta"){
+            if(kadin == true){
+                var hesap = (10*kilo+6.25*boy-5*yas-161)*1.55;
+            }else{
+                var hesap = (10*kilo+6.25*boy-5*yas+5)*1.55;
+            }
+        }else if(aktivite == "yuksek"){
+            if(kadin == true){
+                var hesap = (10*kilo+6.25*boy-5*yas-161)*1.725;
+            }else{
+                var hesap = (10*kilo+6.25*boy-5*yas+5)*1.725;
+            }
+        }else if(aktivite == "cok-yuksek"){
+            if(kadin == true){
+                var hesap = (10*kilo+6.25*boy-5*yas-161)*1.9;
+            }else{
+                var hesap = (10*kilo+6.25*boy-5*yas+5)*1.9;
+            }
+        }
+
+        hesap = hesap.toFixed(2);
+        alert("Günlük Kalori İhtiyacı : " + hesap);
+    }
+
+    function message_5(){
+        var kilo = document.getElementById("kilo5").value;
+        var hesap = kilo * 0.033;
+        hesap = hesap.toFixed(2);
+        alert("Günlük " + hesap + "L su içmelisiniz." );
+    }
+</script>
